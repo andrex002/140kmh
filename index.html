@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140 км.ч - Люби, Люби(stereo).mp3" download title="скачать">1. 140 kmh - Люби, люби</a></h3>
+		<audio src="music/140 км.ч - Люби, Люби(stereo).mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140 км.ч - Маленькие мальчики(stereo).mp3" download title="скачать">2. 140 kmh - Маленькие мальчики</a></h3>
+		<audio src="music/140 км.ч - Маленькие мальчики(stereo).mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140 км.ч - Мне снится (Пачка сигарет)1.mp3" download title="скачать">3. 140 kmh - Мне снится (Пачка сигарет)</a></h3>
+		<audio src="music/140 км.ч - Мне снится (Пачка сигарет)1.mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140 км.ч - Сегодня тусовка1.mp3" download title="скачать">4. 140 kmh - Сегодня тусовка</a></h3>
+		<audio src="music/140 км.ч - Сегодня тусовка1.mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140 км.ч - Сказка1.mp3" download title="скачать">5. 140 kmh - Сказка</a></h3>
+		<audio src="music/140 км.ч - Сказка1.mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140 км.ч - Странная любовь.mp3" download title="скачать">6. 140 kmh - Странная любовь</a></h3>
+		<audio src="music/140 км.ч - Странная любовь.mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140 км.ч - Ты не со мной1.mp3" download title="скачать">7. 140 kmh - Ты не со мной</a></h3>
+		<audio src="music/140 км.ч - Ты не со мной1.mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140 км.ч - Шалава.mp3" download title="скачать">8. 140 kmh - Шалава</a></h3>
+		<audio src="music/140 км.ч - Шалава.mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140 км.ч - Школьный выпускной1.mp3" download title="скачать">9. 140 kmh - Школьный выпускной</a></h3>
+		<audio src="music/140 км.ч - Школьный выпускной1.mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140 км.ч - Юрик,Ленки и Андрей.mp3" download title="скачать">10. 140 kmh - Юрик,Ленки и Андрей</a></h3>
+		<audio src="music/140 км.ч - Юрик,Ленки и Андрей.mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140км.ч - Андрюха.mp3" download title="скачать">11. 140 kmh - Андрюха</a></h3>
+		<audio src="music/140км.ч - Андрюха.mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<div class="track">
+		<h3 class="track__title"><a class="track__link" href="music/140 км.ч - Школьная Любовь.mp3" download title="скачать">12. 140 kmh - Школьная Любовь</a></h3>
+		<audio src="music/140 км.ч - Школьная Любовь.mp3" controls type="audio/mpeg"></audio>
+	</div>
+	<script>
+		document.addEventListener('play', function(evt) {
+			let audioPlayers = document.querySelectorAll('audio');
+			for(let i = 0; i < audioPlayers.length; i++) {
+				if(audioPlayers[i] != evt.target) {
+					audioPlayers[i].pause();
+				}
+			}
+		}, true);
+	</script>
+</body>
+</html>

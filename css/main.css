@@ -1,0 +1,25 @@
+.track {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 10px 50px;
+}
+.track__inner {
+	margin: 0 auto;
+}
+.track__title {
+	margin: 10px;
+	text-align: center;
+}
+.track__link {
+	color: black;
+	text-decoration: none;
+}
+audio:focus {
+	outline: none;
+}
